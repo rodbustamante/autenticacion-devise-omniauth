@@ -1,0 +1,11 @@
+<% if user_signed_in? %>
+	Logged in as <strong><%= current_user.email %></strong>.
+ 	<%= link_to 'Editar perfil', edit_user_registration_path %> |
+ 	<%= link_to 'Autenticaciones', authentications_path %> |
+ 	<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% else %>
+	<%= link_to "Crear cuenta", new_user_registration_path %> |
+	<%= link_to "Iniciar sesión", new_user_session_path %>
+	<li><%= link_to "Conectar con Twitter", user_omniauth_authorize_path(:twitter) %></li>
+	<li><%= link_to "Conectar con Facebook", user_omniauth_authorize_path(:facebook) %></li>
+<% end %>

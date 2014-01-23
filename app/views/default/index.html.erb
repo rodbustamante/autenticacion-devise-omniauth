@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+	Logged in as <strong><%= current_user.email %></strong>.
+ 	<%= link_to 'Editar perfil', edit_user_registration_path %> |
+ 	<%= link_to 'Autenticaciones', authentications_path %> |
+ 	<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% else %>
+	¿Aún no inicias sesión? Haz <%= link_to 'click aquí', entrar_path %>
+<% end %>
