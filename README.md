@@ -1,4 +1,4 @@
-== Ejemplo de autenticación con múltiples proveedores usando Devise y Omniauth
+## Ejemplo de autenticación con múltiples proveedores usando Devise y Omniauth
 
 Hice este repo y este **[post](http://rodrigopuente.com/autenticando-usuarios-en-ror-con-omniauth/)** porque la documentación para hacer autenticación con múltiples proveedores conectados a un usuario en las versiones recientes de Devise y Omniauth no existe y uno tiende a toparse con bastante errores por cuestiones que están *deprecated* o que simplemente ya no funcionan así. Además que dicha documentación en español es aún más difícil de encontrar.
 
